@@ -1,0 +1,48 @@
+# 游戏二进制与版权资源 —— 绝不入库
+*.WAR
+*.WAR.bak*
+*.EXE
+*.exe
+*.dll
+*.OGG
+*.OGV
+*.WAV
+*.S25
+*.BIN
+*.crash.dmp
+*.dmp
+
+# 解包产物与临时目录
+extracted/
+extracted_crack/
+ghidra_proj/
+ghidra_out/
+icheck*/
+layout_dump/
+exp_uif/
+uif_backups/
+patch/
+project/
+work/_spot/
+work/_sysdump*/
+work/rebuild*.log
+work/crack_*.log
+
+# 破解中间物（保留 pos1_rows.pkl 与 saimin_keyprobe.bin —— 它们是复现必需的破解成果）
+tools/worker_blob.bin
+tools/region_native.bin
+tools/region_rgb.bin
+tools/_d.txt
+tools/reference/          # 含游戏 logo 图像，属版权物
+tools/*.log
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# 译文（原作演绎作品，公开版不收录）
+translations/
+
+# 第三方源码（arc_unpacker / GARbro），许可证不在本仓库范围内
+tools/reference/
